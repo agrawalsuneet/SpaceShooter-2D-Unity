@@ -44,7 +44,10 @@ public class PlayerController : MonoBehaviour {
 		);
 
 		GetComponent<Rigidbody> ().rotation = Quaternion.Euler (
-			GetComponent<Rigidbody>().velocity.z * xTilt, 0.0f, GetComponent<Rigidbody>().velocity.x * -zTilt
+			//GetComponent<Rigidbody>().velocity.z * xTilt, 
+			0.0f,
+			0.0f, 
+			GetComponent<Rigidbody>().velocity.x * -zTilt
 		);
 	}
 }
